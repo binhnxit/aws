@@ -93,7 +93,7 @@ sudo mkdir -p /etc/supervisord.d
 sudo mkdir -p /var/log/supervisor
 ```
  
-## Create ampi batch program config file
+## Create demo batch program config file
 ```sh
 sudo nano /etc/supervisord.d/demo_batch.conf
 ```
