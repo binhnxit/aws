@@ -95,13 +95,13 @@ sudo mkdir -p /var/log/supervisor
  
 ## Create ampi batch program config file
 ```sh
-sudo nano /etc/supervisord.d/dmm_price_update_batch.conf
+sudo nano /etc/supervisord.d/demo_batch.conf
 ```
  
 ```
 [program:laravel-worker]
 process_name=%(program_name)s_%(process_num)02d
-command=php /var/www/html/dmm_backend/current/artisan queue:work database --sleep=3 --tries=1 --timeout=60000
+command=php /var/www/html/source_code/current/artisan queue:work database --sleep=3 --tries=1 --timeout=60000
 autostart=true
 autorestart=true
 user=centos
