@@ -151,13 +151,13 @@ sudo brew services restart nginx
 ```
 ## Multi git acc
 ```
-ssh-keygen -t rsa -C "binh.nx@workhouse.me"
+ssh-keygen -t rsa -C "binh.nx@abc.com"
 ```
-/Users/binhnx/.ssh/id_rsa_workhouse
+/Users/binhnx/.ssh/id_rsa_bitbucket
 ```
 ssh-keygen -t rsa -C "binhnx.it@gmail.com"
 ```
-/Users/binhnx/.ssh/id_rsa_binh_github
+/Users/binhnx/.ssh/id_rsa_github
 
 ```
 cd ~/.ssh/
@@ -168,11 +168,11 @@ Host github.com
   HostName github.com
   IdentityFile ~/.ssh/id_rsa
 
-Host bitbucket.org-binhneolab
+Host bitbucket.org-nl
   HostName bitbucket.org
 IdentityFile ~/.ssh/id_rsa_nl
 
-Host bitbucket.org-id_rsa_binh_github
+Host bitbucket.org-wh
   HostName bitbucket.org
 IdentityFile ~/.ssh/id_rsa_binh_github
 
@@ -184,13 +184,13 @@ Host *
 ```
 ssh-add -D
 
-ssh-add ~/.ssh/id_rsa_workhouse
-ssh-add ~/.ssh/id_rsa_tulanhtieu
+ssh-add ~/.ssh/id_rsa_bitbucket
+ssh-add ~/.ssh/id_rsa_github
 
 ssh-add -l
 
-cat ~/.ssh/id_rsa_workhouse.pub | pbcopy
-cat ~/.ssh/id_rsa_tulanhtieu.pub | pbcopy
+cat ~/.ssh/id_rsa_bitbucket.pub | pbcopy
+cat ~/.ssh/id_rsa_github.pub | pbcopy
 ```
 ```
 brew install composer
