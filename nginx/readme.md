@@ -120,7 +120,7 @@ user binhnx staff;
         server_name  localhost local.test;
         index index.php;
 
-        root /Code;
+        root /wwww/workspace;
         location / {
             try_files $uri $uri/ /index.php$is_args$args;
         }
@@ -130,10 +130,10 @@ user binhnx staff;
     
     server {
         listen       80;
-        server_name  control.drone.test;
+        server_name  api.abc.xxx;
         index index.php;
 
-        root /www/drone/web/control/public;
+        root /www/abc/public;
         location / {
             try_files $uri $uri/ /index.php$is_args$args;
         }
@@ -235,8 +235,4 @@ Add ssl.crt to Keychain Access > SYSTEM
 
 ```
 
-## Others app
-```
-brew cask install google-chrome vlc postman docker phpstorm visual-studio-code
-datagrip webstorm pycharm skype chatwork slack telegram-desktop gotiengviet mac2imgur
 ```
